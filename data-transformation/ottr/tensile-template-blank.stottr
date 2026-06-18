@@ -1,0 +1,42 @@
+
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix owl:    <http://www.w3.org/2002/07/owl#> . 
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> . 
+
+@prefix ottr:     <http://ns.ottr.xyz/0.4/> . 
+@prefix ax:     <http://tpl.ottr.xyz/owl/axiom/0.1/> . 
+@prefix rstr:     <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-pizza:  <http://tpl.ottr.xyz/pizza/0.1/> .
+
+@prefix ex:     <http://example.com/ns#> . 
+
+@prefix tensile_strength: <https://w3id.org/pmd/co/PMD_0080154> .
+@prefix has_quality: <http://purl.obolibrary.org/obo/RO_0000086> .
+@prefix has_role: <http://purl.obolibrary.org/obo/RO_0000087> .
+@prefix has_value_specification: <http://purl.obolibrary.org/obo/OBI_0001938> .
+@prefix specifies_value_of: <http://purl.obolibrary.org/obo/OBI_0001927> .
+@prefix has_participant: <http://purl.obolibrary.org/obo/RO_0000057> .
+@prefix specified_output_of: <http://purl.obolibrary.org/obo/OBI_0000312> . 
+@prefix realizes: <http://purl.obolibrary.org/obo/BFO_0000055> .
+@prefix has_specified_numeric_value: <http://purl.obolibrary.org/obo/OBI_0001937> .
+@prefix has_measurement_unit_label: <http://purl.obolibrary.org/obo/IAO_0000039> .
+@prefix measurement_datum: <http://purl.obolibrary.org/obo/IAO_0000109> .
+
+ex:TensileStrengthTemplate[? xsd:string ?label, ? xsd:integer ?value, ? owl:NamedIndividual ?unit] :: {
+
+  ottr:Triple(_:qual, rdf:type, tensile_strength:),
+  ottr:Triple(_:obj, rdfs:label, ?label),
+  ottr:Triple(_:obj, has_quality:, _:qual),
+  ottr:Triple(_:obj, has_role:, _:role),
+  ottr:Triple(_:datum, rdf:type, measurement_datum: ),
+  ottr:Triple(_:datum, has_value_specification:, _:spec ), 
+  ottr:Triple(_:spec,  specifies_value_of:, _:qual) ,
+  ottr:Triple(_:datum, specified_output_of:, _:proc) ,
+  ottr:Triple(_:proc, has_participant:, _:obj ), 
+  ottr:Triple(_:proc, realizes:, _:role ),
+  ottr:Triple(_:spec, has_specified_numeric_value:, ?value ),
+  ottr:Triple(_:spec, has_measurement_unit_label:, ?unit )
+
+
+} .
