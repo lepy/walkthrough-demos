@@ -22,7 +22,7 @@ for row in csv.split("\n")[1:]:  # this is just an example; please use a proper 
 	role = URIRef("http://example.org/role_" + id)
 
 	# IRIs from the ontology
-	tensile_strength = URIRef("https://w3id.org/pmd/co/PMD_0080154")
+	tensile_strength = URIRef("https://w3id.org/pmd/tto/TTO_0000053")
 	has_quality = URIRef("http://purl.obolibrary.org/obo/RO_0000086")
 	has_role = URIRef("http://purl.obolibrary.org/obo/RO_0000087")
 	has_value_specification = URIRef("http://purl.obolibrary.org/obo/OBI_0001938")
@@ -31,7 +31,7 @@ for row in csv.split("\n")[1:]:  # this is just an example; please use a proper 
 	specified_output_of = URIRef("http://purl.obolibrary.org/obo/OBI_0000312")
 	realizes = URIRef("http://purl.obolibrary.org/obo/BFO_0000055")
 	has_specified_numeric_value = URIRef("http://purl.obolibrary.org/obo/OBI_0001937")
-	has_measurement_unit_label = URIRef("ttp://purl.obolibrary.org/obo/IAO_0000039")
+	has_measurement_unit_label = URIRef("http://purl.obolibrary.org/obo/IAO_0000039")
 	measurement_datum = URIRef("http://purl.obolibrary.org/obo/IAO_0000109")
 
 	unit_iri = URIRef("http://qudt.org/vocab/unit/" + unit)

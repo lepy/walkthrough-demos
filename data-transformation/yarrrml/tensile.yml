@@ -14,7 +14,7 @@ prefixes:
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   ex: http://example.com/
   
-  tensile_strength: https://w3id.org/pmd/co/PMD_0080154
+  tensile_strength: https://w3id.org/pmd/tto/TTO_0000053
   has_quality: http://purl.obolibrary.org/obo/RO_0000086
   has_role: http://purl.obolibrary.org/obo/RO_0000087
   has_value_specification: http://purl.obolibrary.org/obo/OBI_0001938

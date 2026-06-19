@@ -1,7 +1,7 @@
 
 
 prefix="""
-@prefix tensile_strength: <https://w3id.org/pmd/co/PMD_0080154> .
+@prefix tensile_strength: <https://w3id.org/pmd/tto/TTO_0000053> .
 @prefix has_quality: <http://purl.obolibrary.org/obo/RO_0000086> .
 @prefix has_role: <http://purl.obolibrary.org/obo/RO_0000087> .
 @prefix has_value_specification: <http://purl.obolibrary.org/obo/OBI_0001938> .

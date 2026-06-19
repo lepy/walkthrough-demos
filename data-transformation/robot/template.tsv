@@ -1,6 +1,6 @@
 id	label	type	superclass	quality	role	participant	value spec	value of	output of	realizes	value	unit														
 ID	LABEL	TYPE	SC %	I 'has quality'	I 'has role'	I 'has participant'	I 'has value specification'	I 'specifies value of'	I 'specified output of'	I 'realizes'	I 'has specified value'	I 'has measurement unit label'														
-https://w3id.org/pmd/co/PMD_0080154	tensile strength		quality																							
+https://w3id.org/pmd/tto/TTO_0000053	tensile strength		quality																							
 http://example.org/obj_1	obj_1	object		qual_1	role_1																					
 http://example.org/qual_1	qual_1	tensile strength																								
 http://example.org/role_1	role_1	test piece role																								
