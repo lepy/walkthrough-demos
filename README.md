@@ -100,6 +100,29 @@ At a glance:
 | **Output** | Turtle | Turtle | Turtle | N-Triples | OWL (Turtle) |
 | **Produces** | instance data | instance data | instance data | instance data | OWL ontology |
 
+### Comparison Table
+
+| Criterion               | Python Templates | Python + RDFLib | YARRRML/RML | OTTR  | ROBOT |
+| ----------------------- | ---------------- | --------------- | ----------- | ----- | ----- |
+| Easy to start           | ⭐⭐⭐⭐⭐            | ⭐⭐⭐⭐            | ⭐⭐⭐         | ⭐⭐    | ⭐⭐    |
+| RDF correctness         | ⭐⭐               | ⭐⭐⭐⭐⭐           | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐  |
+| Reusability             | ⭐                | ⭐⭐              | ⭐⭐⭐⭐        | ⭐⭐⭐⭐⭐ | ⭐⭐⭐   |
+| Maintainability         | ⭐⭐               | ⭐⭐⭐             | ⭐⭐⭐⭐        | ⭐⭐⭐⭐⭐ | ⭐⭐⭐   |
+| Non-programmer friendly | ⭐                | ⭐               | ⭐⭐⭐⭐        | ⭐⭐⭐   | ⭐⭐⭐⭐  |
+| Standards-based         | ⭐                | ⭐⭐              | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐  | ⭐⭐⭐⭐  |
+| Large-scale KG projects | ⭐                | ⭐⭐⭐             | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐  | ⭐⭐⭐   |
+| Learning RDF concepts   | ⭐⭐⭐⭐⭐            | ⭐⭐⭐⭐            | ⭐⭐⭐         | ⭐⭐⭐   | ⭐⭐⭐   |
+
+### Practical Recommendation
+
+For most real-world semantic data integration projects:
+
+* YARRRML/RML is usually the best default choice because mappings are declarative, portable, and maintainable.
+* Python + RDFLib is preferable when transformations involve substantial computation, data cleaning, external APIs, or complex business rules.
+* OTTR is particularly valuable when the RDF model contains many recurring graph patterns and you want template reuse.
+* ROBOT is the right choice when the goal is an OWL ontology (classes, axioms, labels) rather than just instance data, especially within the OBO / ontology-engineering ecosystem.
+* Plain Python string templates are mainly useful for teaching, experimentation, and very small one-off transformations.
+
 For a full side-by-side comparison — the RDF each one produces, the triple-level pattern,
 and their differences — see
 [`data-transformation/COMPARISON.md`](data-transformation/COMPARISON.md).
