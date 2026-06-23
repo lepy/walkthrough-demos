@@ -107,10 +107,10 @@ At a glance:
 | Easy to start           | ⭐⭐⭐⭐⭐            | ⭐⭐⭐⭐            | ⭐⭐⭐         | ⭐⭐    | ⭐⭐    |
 | RDF correctness         | ⭐⭐               | ⭐⭐⭐⭐⭐           | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐  |
 | Reusability             | ⭐                | ⭐⭐              | ⭐⭐⭐⭐        | ⭐⭐⭐⭐⭐ | ⭐⭐⭐   |
-| Maintainability         | ⭐⭐               | ⭐⭐⭐             | ⭐⭐⭐⭐        | ⭐⭐⭐⭐⭐ | ⭐⭐⭐   |
+| Maintainability         | ⭐⭐               | ⭐⭐⭐             | ⭐⭐⭐⭐        | ⭐⭐⭐⭐⭐ | ⭐⭐    |
 | Non-programmer friendly | ⭐                | ⭐               | ⭐⭐⭐⭐        | ⭐⭐⭐   | ⭐⭐⭐⭐  |
 | Standards-based         | ⭐                | ⭐⭐              | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐  | ⭐⭐⭐⭐  |
-| Large-scale KG projects | ⭐                | ⭐⭐⭐             | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐  | ⭐⭐⭐   |
+| Large-scale KG projects | ⭐                | ⭐⭐⭐             | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐  | ⭐⭐    |
 | Learning RDF concepts   | ⭐⭐⭐⭐⭐            | ⭐⭐⭐⭐            | ⭐⭐⭐         | ⭐⭐⭐   | ⭐⭐⭐   |
 
 ### Practical Recommendation
